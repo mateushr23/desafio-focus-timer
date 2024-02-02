@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Focus Timer Desafio</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="left">
+        <section id="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+        <section id="controls">
+          <div class="button-wrapper-left">
+            <button data-action="toggleRunning" class="ph ph-play-circle">
+              <span class="sr-only">Iniciar contador</span>
+            </button>
+            <button data-action="toggleRunning" class="ph ph-pause-circle">
+              <span class="sr-only">Pausar contador</span>
+            </button>
+            <button data-action="reset" class="ph ph-stop-circle">
+              <span class="sr-only">Resetar contador</span>
+            </button>
+            <button data-action="add" class="ph ph-plus-circle">
+              <span class="sr-only">Adicionar 5min</span>
+            </button>
+            <button data-action="remove" class="ph ph-minus-circle">
+              <span class="sr-only">Remover 5 min</span>
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="right">
+        <section id="sound-controls">
+          <button data-action="toggleForest" class="ph ph-tree">
+            <span class="sr-only">Som de floresta</span>
+          </button>
+          <button data-action="toggleRain" class="ph ph-cloud-rain">
+            <span class="sr-only">Som de chuva</span>
+          </button>
+          <button data-action="toggleCoffee" class="ph ph-storefront">
+            <span class="sr-only">Som de cafeteria</span>
+          </button>
+          <button data-action="toggleFire" class="ph ph-campfire">
+            <span class="sr-only">Som de lareira</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
